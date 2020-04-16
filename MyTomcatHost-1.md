@@ -12,10 +12,15 @@ first we need to check what ports and services are available for us in the targe
 ![nmap-scan](images/MyTomcatHost-1/nmap-scan.png)
 
 *command exaplain:*
+
 *nmap* - network scanner tool used to discover hosts and services on machines.
+
 *-sC* - preforming script scan using default scripts.
+
 *-sV* - preforming service version detection.
+
 *-oA* - output in all formats.
+
 *-Pn* - treating the host as online - skip host discovery (it was necessary for nmap scan on this machine).
 
 it is recommanded to scan the machine at the background for all ports while enumerating the machine, since all ports scan found the same port I wont show it.
