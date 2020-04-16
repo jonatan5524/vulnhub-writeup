@@ -1,9 +1,10 @@
 # My Tomcat Host:1 - VulnHub
 
-[My Tomcat Host:1 VulnGub link](https://www.vulnhub.com/entry/my-tomcat-host-1,457/)
+[My Tomcat Host:1 VulnHub link](https://www.vulnhub.com/entry/my-tomcat-host-1,457/)
 
 ### arp scan to find out our machine ip address on the network
 ![arp-scan](images/MyTomcatHost-1/arp-scan.png)
+
 we found out our target ip address is 192.168.56.102
 
 ## Nmap
