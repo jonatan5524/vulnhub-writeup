@@ -105,12 +105,16 @@ we send the jar file to the target machine using python SimpleHTTPServer and wge
 
 **on the attacker machine:**
 ![reverse-shell-send](images/MyTomcatHost-1/create-shell-send.png)
+
 **on the target machine:**
+
 ![wget-revershell](images/MyTomcatHost-1/wget.png)
 
 **fire up metasploit and set up the exploit:**
 ![msf](images/MyTomcatHost-1/msf.png)
+
 **run the jar file in th target machine:**
+
 ![run-jar](images/MyTomcatHost-1/run-jar.png)
 
 **and we got root access!!**
