@@ -121,6 +121,16 @@ if we save the page, open listening on port 1234 using netcat and browse to the 
 
 ![initial-shell](images/ItsOctober-1/init-shell.png)
 
+**command explain:**
+
+**nc** - netcat, tcp and udp tool for connections and listens.
+
+**-l** - listen for connections.
+
+**-v** - verbose output.
+
+**-p** - port number.
+
 after getting the initial shell, we do some enumarating: investigating the existing users, maybe sudo permissions or running services at localhost, but found nothing.
 
 then we search for files with suid as root - suid is special type of file permissions to run a file as it's owner, so when we run file with root owner and suid we are running as root, we can use this files for privilege escalation to get to root.
@@ -128,6 +138,18 @@ then we search for files with suid as root - suid is special type of file permis
 in order to find suid root files:
 
 ![suid-search](images/ItsOctober-1/suid-search.png)
+
+**command explain:**
+
+**find** - command to search files.
+
+**-user** - file is owned by...
+
+**-perm** - file with permission (find suid file set as 4000)
+
+**-print** - print the full file name.
+
+**2>/dev/null** - redirect errors to /dev/null - meaning not printed on console.
 
 one of the executable file set as root is python3!
 
