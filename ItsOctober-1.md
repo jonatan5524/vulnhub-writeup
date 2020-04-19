@@ -104,7 +104,7 @@ after searching this backend section, found a way to add new page in cms section
 
 a little searching on google about the October framework (the website build in framework) tells us it's a php framework, in order to add a new page with php code we need to add the php code in the code section in a function called onStart:
 
-![reverseshell-code](images/ItsOctober-1/reverse-shell-code.png)
+![reverseshell-code](images/ItsOctober-1/php-reverse-shell-code.png)
 
 192.168.56.103 - attacker ip address.
 1234 - attacker port.
