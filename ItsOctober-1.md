@@ -72,7 +72,7 @@ now usually when enumarating http website we should run on the background tool t
 
 I will be using gobuster:
 
-![gobuster-scan](images/ItsOctober-1/gobuster.png)
+![gobuster-scan](images/ItsOctober-1/gobuster-scan.png)
 
 **command exaplain:**
 
