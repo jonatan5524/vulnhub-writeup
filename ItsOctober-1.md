@@ -1,6 +1,6 @@
 # It's October:1 - VulnHub
 
-[My Tomcat Host:1 VulnHub link](https://www.vulnhub.com/entry/its-october-1,460/)
+[It's October:1 VulnHub link](https://www.vulnhub.com/entry/its-october-1,460/)
 
 ## arp scan to find out our machine ip address on the network
 ![arp-scan](images/ItsOctober-1/arp-scan.png)
