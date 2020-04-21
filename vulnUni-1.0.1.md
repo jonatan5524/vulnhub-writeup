@@ -58,7 +58,7 @@ so we browse to the link we found and press the login link that brings us to the
 
 ![eclass](images/vulnuni-1.0.1/eClass.png)
 
-** we need to add vulnuni.local to the /etc/hosts with host ip for more smooth access, since all the links direct to this host name **
+**we need to add vulnuni.local to the /etc/hosts with host ip for more smooth access, since all the links direct to this host name**
 
 after trying the common username and passwords with no success we go to sqlmap tool.
 
