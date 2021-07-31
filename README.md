@@ -1,6 +1,6 @@
 # vulnHub machines write up
 
-## For Educational Purposes Only
+For Educational Purposes Only
 
 Author: jonatan ezron
 
